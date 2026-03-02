@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import smbus
 GPIO.setmode(GPIO.BCM)
 num = 0
-dynamic_range = 5
+dynamic_range = 4.16
 class MCP4725:
     def __init__(self, dynamic_range, address=0x61, verbose = True):
         self.bus = smbus.SMBus(1)
